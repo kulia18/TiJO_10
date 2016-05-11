@@ -8,6 +8,7 @@
     "grunt-cli": "0.1.13",
     "grunt-contrib-jshint": "0.11.2",
     "grunt-karma": "0.10.1",
+    "grunt-npm-install": "^0.3.0",
     "jasmine": "2.4.1",
     "jasmine-core": "2.4.1",
     "jasmine-reporters": "2.0.7",
