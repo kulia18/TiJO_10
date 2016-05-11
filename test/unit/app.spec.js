@@ -19,6 +19,31 @@ describe('app', function () {
                 name: 'Zack', age: 5, course: 'kids'
             });
         });
+        it('should assign person under 3 to kids group', function () {
+            expect(app.assignToSwimmingCourse('Ana', '10/07/2012')).toEqual({
+                name: 'Ana', age: 3, course: 'kids'
+            });
+        });
+        it('should do something...', function () {
+
+        });
+
+    });
+
+    describe('calculateArea', function () {
+        it('should return false, if the third parametr is not a number', function () {
+            expect(app.calculateArea(1, 15, 'ala', 'Zle', 'Dobrze')).toBe(false);
+        });
+        it('should return false, if the fifth parametr is not a string', function () {
+            expect(app.calculateArea(5, 5, 5, 'Dobrze', 999)).toBe(false);
+        });
+        it('should return false, if there is not enough parametrs', function () {
+            expect(app.calculateArea(1, 1)).toBe(false);
+        });
+        it('should return false, if the first parametr is not a number', function () {
+            expect(app.calculateArea('x', 5, 5, 'Dobrze', 'Zle')).toBe(true);
+        });
+
     });
 });
 
