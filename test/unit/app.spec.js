@@ -24,9 +24,6 @@ describe('app', function () {
                 name: 'Ana', age: 3, course: 'kids'
             });
         });
-        it('should do something...', function () {
-
-        });
 
     });
 
@@ -41,7 +38,7 @@ describe('app', function () {
             expect(app.calculateArea(1, 1)).toBe(false);
         });
         it('should return false, if the first parametr is not a number', function () {
-            expect(app.calculateArea('x', 5, 5, 'Dobrze', 'Zle')).toBe(true);
+            expect(app.calculateArea('x', 5, 5, 'Dobrze', 'Zle')).toBe(false);
         });
 
     });
